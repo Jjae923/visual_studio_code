@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="클릭1" onclick="test()" />
+    <script>
+      function test() {
+        let myWin = window.open("", "myWin", "width=200,height=100");
+        myWin.document.write("<p>This is myWindow</p>"); // body 안에 집어넣는 함수
+        myWin.opener.document.write("<p>This is the source window!</p>"); // 부모의 body 안에 글자 넣기
+      }
+    </script>
+  </body>
+</html>

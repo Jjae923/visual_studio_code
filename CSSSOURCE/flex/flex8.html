@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #333338;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      .main-content,
+      .sidebar {
+        background-color: #eee;
+        margin: 10px;
+        padding: 6px;
+        background-color: white;
+      }
+      .panel {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+      .main-content {
+        flex: 2; /* flex 비율_main-content 전체 3 분의 2 */
+      }
+      .sidebar {
+        flex: 1; /* flex 비율_main-content 전체 3 분의 1 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui
+            voluptatum, ea consectetur enim aperiam est expedita, quisquam
+            officiis pariatur architecto vel illo doloremque repellat fugiat
+            adipisci, eos quia delectus!
+          </p>
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/laptop001.jpg"
+            alt=""
+          />
+          <h3>Sub Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            expedita facere veniam in neque tenetur blanditiis perferendis id
+            temporibus alias sit a, eveniet dignissimos ullam ut recusandae quos
+            hic quisquam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            expedita facere veniam in neque tenetur blanditiis perferendis id
+            temporibus alias sit a, eveniet dignissimos ullam ut recusandae quos
+            hic quisquam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            excepturi obcaecati natus consequuntur minus pariatur tenetur quis
+            nulla, id, enim omnis ipsam blanditiis quibusdam incidunt assumenda
+            eum aliquam aspernatur. Quidem ratione repellat molestiae sequi
+            animi facilis, sed hic reprehenderit consequuntur, eaque cupiditate,
+            culpa dolores suscipit! Ipsa quia nemo qui tempore adipisci, maiores
+            magni, dolore iste architecto reprehenderit consectetur voluptatum?
+            Minus quos architecto eveniet, reiciendis tempore facere recusandae,
+            dolor ea dolorum nostrum ipsam labore debitis ut vero repudiandae
+            voluptate ad corporis velit alias temporibus animi. Consequuntur ea
+            vel iste, amet consectetur, sed perferendis nihil beatae praesentium
+            atque qui, a ipsa veritatis?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            excepturi obcaecati natus consequuntur minus pariatur tenetur quis
+            nulla, id, enim omnis ipsam blanditiis quibusdam incidunt assumenda
+            eum aliquam aspernatur. Quidem ratione repellat molestiae sequi
+            animi facilis, sed hic reprehenderit consequuntur, eaque cupiditate,
+            culpa dolores suscipit! Ipsa quia nemo qui tempore adipisci, maiores
+            magni, dolore iste architecto reprehenderit consectetur voluptatum?
+            Minus quos architecto eveniet, reiciendis tempore facere recusandae,
+            dolor ea dolorum nostrum ipsam labore debitis ut vero repudiandae
+            voluptate ad corporis velit alias temporibus animi. Consequuntur ea
+            vel iste, amet consectetur, sed perferendis nihil beatae praesentium
+            atque qui, a ipsa veritatis?
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam
+            consectetur minima natus fuga architecto sint totam, adipisci ex et
+            aliquam tempora voluptas cum expedita accusantium ipsum doloribus
+            deserunt dolorem.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam
+            consectetur minima natus fuga architecto sint totam, adipisci ex et
+            aliquam tempora voluptas cum expedita accusantium ipsum doloribus
+            deserunt dolorem.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam
+            consectetur minima natus fuga architecto sint totam, adipisci ex et
+            aliquam tempora voluptas cum expedita accusantium ipsum doloribus
+            deserunt dolorem.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam
+            consectetur minima natus fuga architecto sint totam, adipisci ex et
+            aliquam tempora voluptas cum expedita accusantium ipsum doloribus
+            deserunt dolorem.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

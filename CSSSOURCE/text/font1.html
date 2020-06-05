@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 문서의 font 크기를 14px */
+      body {
+        font-size: 14px;
+      }
+      p {
+        font-size: 20px; /* px, em, rem */
+        font-style: italic; /* normal(기본), oblique */
+        font-weight: bold; /* 400(기본), normal, 숫자(100~900) */
+      }
+      /* 모든 div의 font 크기를 30px로 지정 */
+      div {
+        font-size: 30px;
+        line-height: 1.5; /* 1.4 ~ 1.7 적절 수치, 글자 크기를 포함한 간격, px보다는 배수로 표현하는게 폰트크기 변화가 있을 수 있어 안전 */
+      }
+      /* font-family: Arial, Helvetica, sans-serif;  첫번째 없으면 다음꺼, 세번째는 글꼴 계열 */
+      .serif {
+        font-family: serif; /* 바탕체 계열 */
+      }
+      .sans-serif {
+        font-family: sans-serif; /* 고딕체 계열 */
+      }
+      .monospace {
+        font-family: monospace; /* 가로 폭이 동등한 계열 */
+      }
+      .cursive {
+        font-family: cursive; /* 필기체 계열 */
+      }
+    </style>
+  </head>
+  <body>
+    <p>font-size / font-style / font-weight / font-height / font-family</p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid
+      aspernatur veritatis, sit modi iusto, nostrum, error cupiditate iure
+      accusamus odit sequi eos eius eveniet pariatur earum porro? Necessitatibus
+      voluptatibus praesentium quas dolore amet tempora earum fuga vel expedita
+      aspernatur? Sed porro necessitatibus animi nesciunt illum voluptatum ipsum
+      voluptatibus adipisci quibusdam dignissimos magnam enim, ad quaerat dicta
+      numquam at aspernatur eaque dolorem quos ab! Modi laboriosam cupiditate
+      nam commodi est itaque. Vel enim dolorem veritatis, dignissimos pariatur
+      fugit! Iusto beatae, corrupti eligendi eveniet ea numquam? A fuga dicta
+      qui minus veritatis possimus minima, maxime ipsa eveniet tempora quos
+      earum sequi!
+    </div>
+    <div class="serif">Hello World</div>
+    <div class="sans-serif">Hello World</div>
+    <div class="monospace">Hello World</div>
+    <div class="cursive">Hello World</div>
+  </body>
+</html>
