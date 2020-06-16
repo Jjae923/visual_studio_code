@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const regexp = /(\w+)\s(\w+)/; // () : 그룹화 및 캡쳐링의 개념
+        let str = "John Smith";
+        console.log("=== match ===");
+        console.log(str.match(regexp)); // John Smith / 0번에 매칭된 값 돌려줌
+        console.log();
+        let newstr = str.replace(regexp, "$2, $1"); // Smith, John / $2(캡쳐링해놓은 2번 값)을 $1(캡쳐링해놓은 1번 값)이랑 바꿔줘(replace)
+        console.log(newstr);
+    </script>
+</body>
+</html>

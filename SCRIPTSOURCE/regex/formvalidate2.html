@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="userid">아이디</label>
+            <input type="text" name="userid" id="userid" placeholder="6~15자리">
+        </div>
+        <div>
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" placeholder="2~4자리">
+        </div>
+        <div>
+            <label for="age">나이</label>
+            <input type="number" name="age" id="age"  placeholder="1~150 사이로 입력하세요">
+        </div>
+        <div>
+            <label for="tel">핸드폰번호</label>
+            <input type="tel" name="tel" id="tel" placeholder="핸드폰 번호는 -를 입력하세요">
+        </div>
+        <div>
+            <button type="button" onclick="validate()">전송</button>
+        </div>
+    </form>
+    <script>
+        function validate() {
+            let userid = document.querySelector("#userid");
+            let name = document.querySelector("#name");
+            let age = document.querySelector("#age");
+            let tel = document.querySelector("#tel");
+            // 아이디 정규식
+            // 대소문자로 시작하고, 숫자, 특수문자를 포함하여 6~15자리
+            const idexp = /(?=^[A-z])(?=.*[0-9])(?=.*[!@#$%^&*_])[A-z0-9!@#$%^&*_]{8,16}$/;
+            // 이름이 비어있으면 경고 메세지 띄우기
+            // 이름이 2~4자리 한글로 입력되었는지 확인한 후 메세지 띄우기
+            // 정규식 사용
+            const regexp = /^[가-힣]{2,4}$/;
+            const telexp = /\d{3}-\d{3,4}-\d{4}/;
+            if(!idexp.test(userid.value)){
+                alert("아이디를 확인해주세요");
+                userid.focus();
+                return false;
+            }else if(!regexp.test(name.value)) {
+                alert("이름을 입력하세요");
+                name.focus();
+                return false; // 밑에꺼 하지말고 돌아가
+            }else if(age.value === "" || age.value <= 0 || age.value > 150){
+                // 나이가 비어있으면 경고 메세지 띄우기
+                // 나이가 1~150 사이로 입력되었는지 확인한 후 메세지 띄우기
+                alert("나이를 입력하세요");
+                age.focus();
+                return false;
+            }else if(!telexp.test(tel.value)){
+                alert("핸드폰 번호르 확인해주세요");
+                tel.focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
