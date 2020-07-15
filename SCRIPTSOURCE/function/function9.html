@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          // closer : iief(즉시 호출하는 함수 표현식)
+        const message = (function() {
+            const secret = "I'm a secret!";
+            return `The secret is ${secret.length} characters long.`;
+        })();
+        console.log(message);
+    </script>
+</body>
+</html>

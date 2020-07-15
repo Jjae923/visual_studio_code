@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let globalFunc;   // global scope
+        {  // block scope
+            let blockVar = "a";
+            globalFunc = function() {  // 익명함수를 참조하도록 하는 방식
+                console.log(blockVar);
+            };
+        }
+        globalFunc();   // closer
+    </script>
+</body>
+</html>
